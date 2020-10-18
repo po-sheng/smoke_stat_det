@@ -1,5 +1,6 @@
 from bert_sklearn import load_model
 from data_preprocess import dataLoader
+import re
 
 path = "../../../data/test/"                       # data path   
 modelFile = "../modelFile/model.bin"        # model file path
@@ -35,6 +36,17 @@ for idx in range(len(data["sent"])):
         # convert label to index
         pred_idx.append(label2idx[y_pred[0]])
 
-print(pred_idx)
-print(pred_label)
-print(data["name"])
+# re-order the data
+ans = []
+zipped = list(zip(pred_idx, pred_label, data["name"]))
+for i in range(len(zipped)):
+    for idx in range(len(zipped)):
+        if int(re.split(r"[._]", zipped[idx][2])[1]) == i+1:
+            ans.append(zipped[idx])
+
+# save and print output
+print(ans)
+f = open("../outcome/prediction.txt", "w")
+for i in range(len(ans)):
+    f.write(ans[i][1]+"\n")
+f.close

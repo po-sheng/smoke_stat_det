@@ -112,7 +112,7 @@ if __name__ == '__main__':
     # env variable
     path = "../../../data/train/"                                     # data path 
     saveFile = "../modelFile/model.bin"                         # model file path
-    keyWords = ["smoke", "smoker", "smokes", "smoking", "smoked", "tobacco"]
+    keyWords = ["smoke", "smoker", "smokes", "smoking", "smoked", "tobacco", "cigarette", "cigarettes"]
     
     params = {                                                  # the parameters needed for normal model
             "bert_model": "bert-base-cased",
