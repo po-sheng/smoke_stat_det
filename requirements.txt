@@ -1,0 +1,6 @@
+torch==1.6.0
+numpy==1.19.2
+sklearn==0.0
+
+bert-sklearn form github.com/charles9n/bert-sklearn 
+
