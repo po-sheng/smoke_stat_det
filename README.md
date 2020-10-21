@@ -1,6 +1,6 @@
-For our project, we are using python3 to implement two kinds of model:
+For our project, we implement two kinds of model:
     
-    1. Bert based model
+    1. Bert based model (python3.6.9)
     
     2. If-else decision tree model
 
