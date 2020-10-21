@@ -33,3 +33,5 @@ Get Started:
             "use_cuda": True}
 
 2. If-else decision tree model
+
+The result of our grid search will be put in "classifier/bert/outcome/result*.txt"
