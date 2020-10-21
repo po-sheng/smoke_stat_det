@@ -20,8 +20,8 @@ Get Started:
 
     below shows our hyperparameters after doing grid search on out model
     
-    params = {                                                  
-            
+    
+        params = {                                                  
             "bert_model": "bert-base-cased",
             "train_batch_size": 5,
             "eval_batch_size": 1,
