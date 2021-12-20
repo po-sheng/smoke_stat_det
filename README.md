@@ -1,3 +1,6 @@
+# Introduction
+For this project, we will use NLP technique to analysis doctor's script to verify which smoking status is this patiant undergoing.
+
 For our project, we implement two kinds of model:
     
     1. Bert based model (python3.6.9)
